@@ -5,8 +5,9 @@ phases:
     commands:
       - echo Build started on `date`
       - cd src/
-      - mvn clean install -Dovrdir=postgres -Pextjs,postgres
+      - mvn clean install -Dovrdir=postgres -Ppostgres
       - ls -al target
 artifacts:
   files:
-    - src/web/app/target/geostore.war
+    - src/target/*.jar
+   # - src/web/app/target/geostore.war
