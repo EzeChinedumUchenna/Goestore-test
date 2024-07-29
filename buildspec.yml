@@ -9,4 +9,4 @@ phases:
       - ls -al target
 artifacts:
   files:
-    - src/target/
+    - src/target/*.jar
