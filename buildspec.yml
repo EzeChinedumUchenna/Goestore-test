@@ -9,5 +9,5 @@ phases:
       - ls -al target
 artifacts:
   files:
-    - src/target/*.jar
+    - src/target/*
    # - src/web/app/target/geostore.war
