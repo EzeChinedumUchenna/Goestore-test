@@ -3,8 +3,8 @@ os: linux
 files:
   - source: ./
     destination: /Geostore-tests
-  - source: src/web/app/target/geostore.war
-    destination: /Geostore-tests/src/web/app/target/geostore.war
+  - source: src/target/*
+    destination: /Geostore-tests/src/target/
 hooks:
   AfterInstall:
     - location: scripts/start_server.sh
