@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - cd src/
+      - mvn clean install -Dovrdir=postgres -Pextjs,postgres
+artifacts:
+  files:
+    - src/web/app/target/geostore.war
